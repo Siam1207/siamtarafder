@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siam Tarafder | Professional Video Editor | High-Retention Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { background-color: #030305; color: #e2e8f0; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glow-effect:hover { box-shadow: 0 0 30px rgba(139, 92, 246, 0.12); border-color: rgba(139, 92, 246, 0.3); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, opacity 0.3s ease-out; opacity: 0; }
+        .faq-active .faq-answer { max-height: 500px; opacity: 1; }
+        .faq-active .faq-icon { transform: rotate(45deg); }
+        .scrollbar-none::-webkit-scrollbar { display: none; }
+        .scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+        .skill-bar { transition: width 1.5s ease-out; }
+        .project-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .project-card:hover { transform: translateY(-4px); }
+        .badge-pulse { animation: pulse-glow 2s infinite; }
+        @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.4); } 50% { box-shadow: 0 0 0 8px rgba(139, 92, 246, 0); } }
+        .testimonial-card { backdrop-filter: blur(10px); }
+        .contact-input:focus { outline: none; border-color: rgba(139, 92, 246, 0.5); box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1); }
+        .gradient-text { background: linear-gradient(135deg, #a78bfa 0%, #818cf8 50%, #f472b6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .video-placeholder { background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(0,0,0,0.5) 100%); }
+    </style>
+</head>
+<body class="antialiased min-h-screen selection:bg-purple-500/30 selection:text-white">
+
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[500px] bg-gradient-to-b from-purple-900/10 to-transparent blur-[140px] pointer-events-none"></div>
+    <div class="fixed bottom-0 right-0 w-[600px] h-[400px] bg-gradient-to-t from-indigo-900/5 to-transparent blur-[120px] pointer-events-none"></div>
+
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-[#030305]/80 border-b border-white/[0.03]">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center text-xs font-extrabold">ST</span>
+                SIAM TARAFDER
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm">
+                <a href="#portfolio" class="text-gray-400 hover:text-white transition-colors">Portfolio</a>
+                <a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a>
+                <a href="#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a>
+                <a href="#faq" class="text-gray-400 hover:text-white transition-colors">FAQs</a>
+                <a href="#contact" class="bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold px-5 py-2.5 rounded-full transition-all shadow-lg shadow-purple-600/20">Hire Me</a>
+            </nav>
+            <button class="md:hidden text-white" onclick="toggleMobileMenu()"><i class="fas fa-bars text-xl"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-white/[0.03] bg-[#030305]/95 backdrop-blur-xl">
+            <div class="px-6 py-4 space-y-3">
+                <a href="#portfolio" class="block text-gray-400 hover:text-white py-2">Portfolio</a>
+                <a href="#skills" class="block text-gray-400 hover:text-white py-2">Skills</a>
+                <a href="#pricing" class="block text-gray-400 hover:text-white py-2">Pricing</a>
+                <a href="#faq" class="block text-gray-400 hover:text-white py-2">FAQs</a>
+                <a href="#contact" class="block bg-purple-600 text-white text-center py-2.5 rounded-full">Hire Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-5xl mx-auto px-6 pt-24 pb-8 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs text-purple-300 font-medium mb-6 badge-pulse">
+            <i class="fas fa-bolt text-purple-400"></i>
+            Professional Video Editor — High-Retention Specialist
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.1] max-w-4xl mx-auto">
+            High-Retention Edits That <span class="gradient-text">Scale Brands</span>
+        </h1>
+        <p class="mt-6 text-base md:text-lg text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
+            Professional Video Editor specializing in high-retention content. Expert in CapCut Pro, Premiere Pro, and cutting-edge AI automation tools to deliver cinematic edits that keep viewers watching and brands scaling.
+        </p>
+        <div class="flex flex-wrap justify-center gap-8 mt-10 text-center">
+            <div><div class="text-2xl font-bold text-white">50+</div><div class="text-xs text-gray-500 mt-1">Projects Delivered</div></div>
+            <div class="w-px h-10 bg-white/10 hidden sm:block"></div>
+            <div><div class="text-2xl font-bold text-white">98%</div><div class="text-xs text-gray-500 mt-1">Client Satisfaction</div></div>
+            <div class="w-px h-10 bg-white/10 hidden sm:block"></div>
+            <div><div class="text-2xl font-bold text-white">24-48h</div><div class="text-xs text-gray-500 mt-1">Avg. Turnaround</div></div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+            <a href="#portfolio" class="bg-purple-600 hover:bg-purple-500 text-white text-sm font-semibold px-8 py-3 rounded-full transition-all shadow-lg shadow-purple-600/20">View My Work</a>
+            <a href="#contact" class="bg-white/[0.03] border border-white/[0.08] text-white text-sm font-medium px-8 py-3 rounded-full hover:bg-white/[0.08] transition-all">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-6 pb-6">
+        <div class="bg-white/[0.01] border border-white/[0.06] rounded-2xl p-3 md:p-4 shadow-2xl relative glow-effect transition-all">
+            <div class="absolute -top-3 left-6 bg-purple-600 text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded text-white shadow flex items-center gap-1.5">
+                <i class="fas fa-play text-[8px]"></i> Featured Gig Video
+            </div>
+            <div class="aspect-video w-full video-placeholder rounded-xl overflow-hidden border border-white/[0.02] flex flex-col items-center justify-center relative group cursor-pointer">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-black/60"></div>
+                <div class="relative z-10 text-center p-8">
+                    <div class="w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-play text-2xl text-white ml-1"></i>
+                    </div>
+                    <h3 class="text-white font-semibold text-lg">Your Gig Introduction Video</h3>
+                    <p class="text-gray-400 text-sm mt-2 max-w-md">Upload your intro video here to showcase your editing style and personality to potential clients.</p>
+                    <div class="mt-4 inline-flex items-center gap-2 text-xs text-purple-400 bg-purple-500/10 px-3 py-1.5 rounded-full border border-purple-500/20">
+                        <i class="fas fa-upload"></i> Replace with your YouTube/Vimeo embed
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/[0.03]">
+        <div class="text-center max-w-xl mx-auto mb-12">
+            <span class="text-purple-400 text-xs font-semibold uppercase tracking-widest">Expertise</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight mt-2">Tools & Skills</h2>
+            <p class="text-sm text-gray-500 mt-3">Professional-grade software stack built through hands-on experience with 50+ client projects across multiple industries.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white/[0.01] border border-white/[0.04] rounded-2xl p-6">
+                <h3 class="text-sm font-semibold text-white mb-6 flex items-center gap-2">
+                    <i class="fas fa-laptop-code text-purple-400"></i> Software Proficiency
+                </h3>
+                <div class="space-y-5">
+                    <div>
+                        <div class="flex justify-between text-xs mb-2">
+                            <span class="text-gray-300">Adobe Premiere Pro</span>
+                            <span class="text-purple-400">95%</span>
+                        </div>
+                        <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full skill-bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs mb-2">
+                            <span class="text-gray-300">CapCut Pro</span>
+                            <span class="text-purple-400">90%</span>
+                        </div>
+                        <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full skill-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs mb-2">
+                            <span class="text-gray-300">Motion Graphics & Visual Effects</span>
+                            <span class="text-purple-400">82%</span>
+                        </div>
+                        <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full skill-bar" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs mb-2">
+                            <span class="text-gray-300">AI Tools (Claude, Higgsfield & more)</span>
+                            <span class="text-purple-400">88%</span>
+                        </div>
+                        <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full skill-bar" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/[0.01] border border-white/[0.04] rounded-2xl p-6">
+                <h3 class="text-sm font-semibold text-white mb-6 flex items-center gap-2">
+                    <i class="fas fa-star text-purple-400"></i> Specializations
+                </h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white/[0.02] border border-white/[0.04] rounded-xl p-4 text-center hover:border-purple-500/20 transition-colors">
+                        <i class="fas fa-video text-purple-400 text-xl mb-2"></i>
+                        <div class="text-xs font-medium text-white">YouTube Long Form</div>
+                        <div class="text-[10px] text-gray-500 mt-1">Retention Editing</div>
+                    </div>
+                    <div class="bg-white/[0.02] border border-white/[0.04] rounded-xl p-4 text-center hover:border-purple-500/20 transition-colors">
+                        <i class="fas fa-mobile-alt text-pink-400 text-xl mb-2"></i>
+                        <div class="text-xs font-medium text-white">Shorts & Reels</div>
+                        <div class="text-[10px] text-gray-500 mt-1">Viral Hooks</div>
+                    </div>
+                    <div class="bg-white/[0.02] border border-white/[0.04] rounded-xl p-4 text-center hover:border-purple-500/20 transition-colors">
+                        <i class="fas fa-film text-indigo-400 text-xl mb-2"></i>
+                        <div class="text-xs font-medium text-white">Documentaries</div>
+                        <div class="text-[10px] text-gray-500 mt-1">Story Pacing</div>
+                    </div>
+                    <div class="bg-white/[0.02] border border-white/[0.04] rounded-xl p-4 text-center hover:border-purple-500/20 transition-colors">
+                        <i class="fas fa-microphone text-cyan-400 text-xl mb-2"></i>
+                        <div class="text-xs font-medium text-white">Podcasts</div>
+                        <div class="text-[10px] text-gray-500 mt-1">Multi-cam Sync</div>
+                    </div>
+                    <div class="bg-white/[0.02] border border-white/[0.04] rounded-xl p-4 text-center hover:border-purple-500/20 transition-colors">
+                        <i class="fas fa-robot text-emerald-400 text-xl mb-2"></i>
+                        <div class="text-xs font-medium text-white">AI UGC Content</div>
+                        <div class="text-[10px] text-gray-500 mt-1">Automation</div>
+                    </div>
+                    <div class="bg-white/[0.02] border border-white/[0.04] rounded-xl p-4 text-center hover:border-purple-500/20 transition-colors">
+                        <i class="fas fa-palette text-amber-400 text-xl mb-2"></i>
+                        <div class="text-xs font-medium text-white">Basic Color Correction</div>
+                        <div class="text-[10px] text-gray-500 mt-1">Consistent Look</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="max-w-6xl mx-auto px-6 py-12 border-t border-white/[0.03]">
+        <div class="text-center max-w-xl mx-auto mb-10">
+            <span class="text-purple-400 text-xs font-semibold uppercase tracking-widest">Portfolio</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight mt-2">Selected Projects</h2>
+            <p class="text-sm text-gray-500 mt-3">A curated collection of my best work across different formats and industries.</p>
+        </div>
+        <div class="flex overflow-x-auto pb-3 gap-2 border-b border-white/[0.05] mb-12 scrollbar-none">
+            <button onclick="filterCategory('all', this)" class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-purple-500 text-white whitespace-nowrap transition-all">All Work</button>
+            <button onclick="filterCategory('youtube-long', this)" class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-400 hover:text-white whitespace-nowrap transition-all">YouTube Long Form</button>
+            <button onclick="filterCategory('shorts', this)" class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-400 hover:text-white whitespace-nowrap transition-all">Shorts & Reels</button>
+            <button onclick="filterCategory('documentary', this)" class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-400 hover:text-white whitespace-nowrap transition-all">Documentaries</button>
+            <button onclick="filterCategory('podcast', this)" class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-400 hover:text-white whitespace-nowrap transition-all">Podcasts</button>
+            <button onclick="filterCategory('ai-ugc', this)" class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-400 hover:text-white whitespace-nowrap transition-all">AI UGC Content</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="portfolio-item youtube-long project-card bg-white/[0.01] border border-white/[0.04] rounded-2xl overflow-hidden glow-effect">
+                <div class="aspect-video w-full bg-black/40 relative group cursor-pointer">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=340&fit=crop" alt="YouTube Project" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+                            <i class="fas fa-play text-white text-lg ml-1"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-3 left-3 z-20">
+                        <span class="text-[10px] font-bold text-purple-400 uppercase tracking-wider bg-black/50 px-2 py-1 rounded">YouTube Long</span>
+                    </div>
+                    <div class="absolute bottom-3 right-3 z-20 text-[10px] text-gray-300 bg-black/50 px-2 py-1 rounded">12:34</div>
+                    <div class="absolute top-3 right-3 z-20">
+                        <span class="text-[10px] font-bold text-white uppercase tracking-wider bg-purple-600/80 backdrop-blur-sm px-2 py-1 rounded border border-purple-400/30">
+                            <i class="fas fa-upload mr-1"></i>Replace
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-sm font-semibold text-white">Tech Review Channel — Retention Edit</h3>
+                    <p class="text-xs text-gray-500 mt-2 leading-relaxed">Increased average view duration by 40% using jump cuts, B-roll layering, and dynamic zoom effects for a 500K+ subscriber tech channel.</p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">Premiere Pro</span>
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">Motion Graphics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item shorts project-card bg-white/[0.01] border border-white/[0.04] rounded-2xl overflow-hidden glow-effect">
+                <div class="aspect-video w-full bg-black/40 relative group cursor-pointer">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=340&fit=crop" alt="Shorts Project" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+                            <i class="fas fa-play text-white text-lg ml-1"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-3 left-3 z-20">
+                        <span class="text-[10px] font-bold text-pink-400 uppercase tracking-wider bg-black/50 px-2 py-1 rounded">Shorts / Reels</span>
+                    </div>
+                    <div class="absolute bottom-3 right-3 z-20 text-[10px] text-gray-300 bg-black/50 px-2 py-1 rounded">0:58</div>
+                    <div class="absolute top-3 right-3 z-20">
+                        <span class="text-[10px] font-bold text-white uppercase tracking-wider bg-pink-600/80 backdrop-blur-sm px-2 py-1 rounded border border-pink-400/30">
+                            <i class="fas fa-upload mr-1"></i>Replace
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-sm font-semibold text-white">Fitness Brand — Viral Hook Series</h3>
+                    <p class="text-xs text-gray-500 mt-2 leading-relaxed">Created 15 viral shorts with Alex Hormozi-style captions, sound effects, and fast-paced editing. Generated 2M+ combined views.</p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">CapCut Pro</span>
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">Motion Graphics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item documentary project-card bg-white/[0.01] border border-white/[0.04] rounded-2xl overflow-hidden glow-effect">
+                <div class="aspect-video w-full bg-black/40 relative group cursor-pointer">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&h=340&fit=crop" alt="Documentary Project" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+                            <i class="fas fa-play text-white text-lg ml-1"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-3 left-3 z-20">
+                        <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-wider bg-black/50 px-2 py-1 rounded">Documentary</span>
+                    </div>
+                    <div class="absolute bottom-3 right-3 z-20 text-[10px] text-gray-300 bg-black/50 px-2 py-1 rounded">18:45</div>
+                    <div class="absolute top-3 right-3 z-20">
+                        <span class="text-[10px] font-bold text-white uppercase tracking-wider bg-indigo-600/80 backdrop-blur-sm px-2 py-1 rounded border border-indigo-400/30">
+                            <i class="fas fa-upload mr-1"></i>Replace
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-sm font-semibold text-white">Street Food Stories — Mini Documentary</h3>
+                    <p class="text-xs text-gray-500 mt-2 leading-relaxed">Full post-production including color correction, sound design, and narrative pacing for an indie documentary series.</p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">Premiere Pro</span>
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">Color Correction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item podcast project-card bg-white/[0.01] border border-white/[0.04] rounded-2xl overflow-hidden glow-effect">
+                <div class="aspect-video w-full bg-black/40 relative group cursor-pointer">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=600&h=340&fit=crop" alt="Podcast Project" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+                            <i class="fas fa-play text-white text-lg ml-1"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-3 left-3 z-20">
+                        <span class="text-[10px] font-bold text-cyan-400 uppercase tracking-wider bg-black/50 px-2 py-1 rounded">Podcast</span>
+                    </div>
+                    <div class="absolute bottom-3 right-3 z-20 text-[10px] text-gray-300 bg-black/50 px-2 py-1 rounded">45:20</div>
+                    <div class="absolute top-3 right-3 z-20">
+                        <span class="text-[10px] font-bold text-white uppercase tracking-wider bg-cyan-600/80 backdrop-blur-sm px-2 py-1 rounded border border-cyan-400/30">
+                            <i class="fas fa-upload mr-1"></i>Replace
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-sm font-semibold text-white">Business Talk Podcast — Multi-cam Edit</h3>
+                    <p class="text-xs text-gray-500 mt-2 leading-relaxed">Synced 4-camera setup with animated lower thirds, chapter markers, and audiogram clips for social promotion.</p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">Premiere Pro</span>
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">Audition</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item ai-ugc project-card bg-white/[0.01] border border-white/[0.04] rounded-2xl overflow-hidden glow-effect">
+                <div class="aspect-video w-full bg-black/40 relative group cursor-pointer">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=340&fit=crop" alt="AI UGC Project" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+                            <i class="fas fa-play text-white text-lg ml-1"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-3 left-3 z-20">
+                        <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider bg-black/50 px-2 py-1 rounded">AI UGC</span>
+                    </div>
+                    <div class="absolute bottom-3 right-3 z-20 text-[10px] text-gray-300 bg-black/50 px-2 py-1 rounded">1:30</div>
+                    <div class="absolute top-3 right-3 z-20">
+                        <span class="text-[10px] font-bold text-white uppercase tracking-wider bg-emerald-600/80 backdrop-blur-sm px-2 py-1 rounded border border-emerald-400/30">
+                            <i class="fas fa-upload mr-1"></i>Replace
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-sm font-semibold text-white">SaaS Product — AI-Generated UGC Ads</h3>
+                    <p class="text-xs text-gray-500 mt-2 leading-relaxed">Used AI avatars, voice cloning, and automated captioning to produce 20 UGC-style ads in 3 days for a startup launch.</p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">Claude AI</span>
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">Higgsfield</span>
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">CapCut</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item youtube-long project-card bg-white/[0.01] border border-white/[0.04] rounded-2xl overflow-hidden glow-effect">
+                <div class="aspect-video w-full bg-black/40 relative group cursor-pointer">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600&h=340&fit=crop" alt="YouTube Project" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+                            <i class="fas fa-play text-white text-lg ml-1"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-3 left-3 z-20">
+                        <span class="text-[10px] font-bold text-purple-400 uppercase tracking-wider bg-black/50 px-2 py-1 rounded">YouTube Long</span>
+                    </div>
+                    <div class="absolute bottom-3 right-3 z-20 text-[10px] text-gray-300 bg-black/50 px-2 py-1 rounded">22:15</div>
+                    <div class="absolute top-3 right-3 z-20">
+                        <span class="text-[10px] font-bold text-white uppercase tracking-wider bg-purple-600/80 backdrop-blur-sm px-2 py-1 rounded border border-purple-400/30">
+                            <i class="fas fa-upload mr-1"></i>Replace
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-sm font-semibold text-white">Gaming Channel — Cinematic Montage</h3>
+                    <p class="text-xs text-gray-500 mt-2 leading-relaxed">Created cinematic intro sequences, transition effects, and beat-synced gameplay montages for a 1M+ gaming channel.</p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">Premiere Pro</span>
+                        <span class="text-[10px] text-gray-600 bg-white/[0.03] px-2 py-1 rounded">Motion Graphics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-10">
+            <button class="inline-flex items-center gap-2 text-sm text-purple-400 hover:text-purple-300 transition-colors border border-purple-500/20 hover:border-purple-500/40 px-6 py-2.5 rounded-full">
+                <i class="fas fa-th-large"></i> View Full Portfolio
+            </button>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-16 border-t border-white/[0.03]">
+        <div class="text-center max-w-xl mx-auto mb-12">
+            <span class="text-purple-400 text-xs font-semibold uppercase tracking-widest">Testimonials</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight mt-2">What Clients Say</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="testimonial-card bg-white/[0.01] border border-white/[0.04] rounded-2xl p-6">
+                <div class="flex items-center gap-1 mb-4">
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                </div>
+                <p class="text-sm text-gray-300 leading-relaxed">"Siam transformed our raw footage into a polished, engaging video that significantly boosted our watch time. His understanding of retention editing is next level."</p>
+                <div class="flex items-center gap-3 mt-5 pt-4 border-t border-white/[0.03]">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-xs font-bold text-white">JD</div>
+                    <div>
+                        <div class="text-xs font-semibold text-white">James Davidson</div>
+                        <div class="text-[10px] text-gray-500">YouTuber, 500K Subs</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card bg-white/[0.01] border border-white/[0.04] rounded-2xl p-6">
+                <div class="flex items-center gap-1 mb-4">
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                </div>
+                <p class="text-sm text-gray-300 leading-relaxed">"Delivered 15 viral shorts in record time. The captions, sound design, and pacing were exactly what we needed for our fitness brand's TikTok growth."</p>
+                <div class="flex items-center gap-3 mt-5 pt-4 border-t border-white/[0.03]">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center text-xs font-bold text-white">SK</div>
+                    <div>
+                        <div class="text-xs font-semibold text-white">Sarah Kim</div>
+                        <div class="text-[10px] text-gray-500">Marketing Director, FitLife</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card bg-white/[0.01] border border-white/[0.04] rounded-2xl p-6">
+                <div class="flex items-center gap-1 mb-4">
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                    <i class="fas fa-star text-amber-400 text-xs"></i>
+                </div>
+                <p class="text-sm text-gray-300 leading-relaxed">"The AI UGC ads Siam created for our SaaS launch were incredible. Professional quality, fast turnaround, and he understood our brand voice perfectly."</p>
+                <div class="flex items-center gap-3 mt-5 pt-4 border-t border-white/[0.03]">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-xs font-bold text-white">MR</div>
+                    <div>
+                        <div class="text-xs font-semibold text-white">Michael Ross</div>
+                        <div class="text-[10px] text-gray-500">Founder, TechStart</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="max-w-6xl mx-auto px-6 py-20 border-t border-white/[0.03]">
+        <div class="text-center max-w-xl mx-auto mb-16">
+            <span class="text-purple-400 text-xs font-semibold uppercase tracking-widest">Pricing</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight mt-2">Flexible Pricing Plans</h2>
+            <p class="text-sm text-gray-500 mt-3">Choose the best workflow structure that suits your immediate media demand. All plans include unlimited revisions within scope.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+            <div class="bg-white/[0.01] border border-white/[0.05] rounded-2xl p-6 flex flex-col justify-between hover:border-white/[0.1] transition-all group">
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fas fa-bolt text-yellow-400 text-sm"></i>
+                        <h3 class="text-lg font-bold text-white">Starter Pack</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">Perfect for short-form content scaling.</p>
+                    <div class="text-3xl font-extrabold text-white mt-4">$45 <span class="text-xs text-gray-500 font-normal">/ flat-rate</span></div>
+                    <ul class="mt-6 space-y-3 text-xs text-gray-400 border-t border-white/[0.03] pt-4">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> 1x Short / Reel Edit (up to 60s)</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Motion Captions & Sound Effects</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> 2 Revision Rounds</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> 48 Hours Delivery</li>
+                        <li class="flex items-center gap-2 text-gray-600"><i class="fas fa-times text-gray-600 text-[10px]"></i> Source Files</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="mt-8 block text-center text-xs font-semibold bg-white/[0.03] border border-white/[0.08] text-white py-2.5 rounded-xl hover:bg-white/[0.08] transition-all">Get Started</a>
+            </div>
+            <div class="bg-gradient-to-b from-purple-950/20 to-transparent border border-purple-500/30 rounded-2xl p-6 flex flex-col justify-between relative shadow-xl shadow-purple-950/20">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-purple-600 text-[9px] uppercase font-bold tracking-widest px-3 py-1 rounded-full text-white flex items-center gap-1">
+                    <i class="fas fa-fire text-[8px]"></i> Most Popular
+                </div>
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fas fa-rocket text-purple-400 text-sm"></i>
+                        <h3 class="text-lg font-bold text-white">Growth Package</h3>
+                    </div>
+                    <p class="text-xs text-purple-400">Optimized for high retention channels.</p>
+                    <div class="text-3xl font-extrabold text-white mt-4">$150 <span class="text-xs text-gray-500 font-normal">/ Fixed</span></div>
+                    <ul class="mt-6 space-y-3 text-xs text-gray-300 border-t border-purple-500/10 pt-4">
+                        <li class="flex items-center gap-2 text-purple-300"><i class="fas fa-check text-purple-400 text-[10px]"></i> 1x YouTube Long Video (Up to 10 mins)</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Premium Sound Design & B-rolls</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Basic Color Correction</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Thumbnail Design Included</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> 3 Revisions Included</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Source Files Provided</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="mt-8 block text-center text-xs font-semibold bg-purple-600 text-white py-2.5 rounded-xl hover:bg-purple-500 transition-all shadow-md shadow-purple-600/10">Select Package</a>
+            </div>
+            <div class="bg-white/[0.01] border border-white/[0.05] rounded-2xl p-6 flex flex-col justify-between hover:border-white/[0.1] transition-all group">
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fas fa-crown text-amber-400 text-sm"></i>
+                        <h3 class="text-lg font-bold text-white">Premium Narrative</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">For documentaries and cinematic pacing.</p>
+                    <div class="text-3xl font-extrabold text-white mt-4">$350+ <span class="text-xs text-gray-500 font-normal">/ Project</span></div>
+                    <ul class="mt-6 space-y-3 text-xs text-gray-400 border-t border-white/[0.03] pt-4">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Full Documentary/Podcast Edit</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Scripting with AI-driven Workflow</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Unlimited Custom Motion Graphics</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Priority VIP Turnaround (24-48h)</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Unlimited Revisions</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Full Source Files + Project Archive</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="mt-8 block text-center text-xs font-semibold bg-white/[0.03] border border-white/[0.08] text-white py-2.5 rounded-xl hover:bg-white/[0.08] transition-all">Custom Quote</a>
+            </div>
+        </div>
+        <div class="mt-10 text-center">
+            <div class="inline-flex items-center gap-2 text-xs text-gray-500 bg-white/[0.02] border border-white/[0.04] px-4 py-2 rounded-full">
+                <i class="fas fa-shield-alt text-emerald-400"></i>
+                100% Satisfaction Guarantee — Not happy? Full refund, no questions asked.
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="max-w-4xl mx-auto px-6 py-16 border-t border-white/[0.03]">
+        <div class="text-center mb-12">
+            <span class="text-purple-400 text-xs font-semibold uppercase tracking-widest">FAQ</span>
+            <h2 class="text-2xl font-bold text-white tracking-tight mt-2">Frequently Asked Questions</h2>
+            <p class="text-sm text-gray-500 mt-3">Everything you need to know before we start working together.</p>
+        </div>
+        <div class="space-y-4">
+            <div class="bg-white/[0.01] border border-white/[0.04] rounded-xl overflow-hidden cursor-pointer hover:border-white/[0.08] transition-colors" onclick="toggleFaq(this)">
+                <div class="p-5 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-laptop-code text-purple-400 text-xs"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-white">What software tools do you use for post-production?</span>
+                    </div>
+                    <span class="faq-icon text-purple-400 text-lg transition-transform duration-200 flex-shrink-0 ml-3">+</span>
+                </div>
+                <div class="faq-answer px-5 pb-5">
+                    <div class="pl-11 text-xs text-gray-400 leading-relaxed">
+                        <p>I rely primarily on <strong class="text-purple-400">Adobe Premiere Pro</strong> for intricate multi-cam edits, long-form pacing, and advanced color grading. For snappy modern social shorts, I integrate <strong class="text-purple-400">CapCut Pro</strong> combined with specialized AI tools (Claude, Higgsfield, and more) to minimize workflow delays while maximizing output quality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/[0.01] border border-white/[0.04] rounded-xl overflow-hidden cursor-pointer hover:border-white/[0.08] transition-colors" onclick="toggleFaq(this)">
+                <div class="p-5 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-clock text-purple-400 text-xs"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-white">What is your typical turnaround time?</span>
+                    </div>
+                    <span class="faq-icon text-purple-400 text-lg transition-transform duration-200 flex-shrink-0 ml-3">+</span>
+                </div>
+                <div class="faq-answer px-5 pb-5">
+                    <div class="pl-11 text-xs text-gray-400 leading-relaxed">
+                        <p><strong class="text-white">Short-form content</strong> (Reels, TikToks, Shorts): <span class="text-purple-400">24-48 hours</span> per video.</p>
+                        <p class="mt-1"><strong class="text-white">YouTube long-form</strong> (up to 10 mins): <span class="text-purple-400">3-5 business days</span>.</p>
+                        <p class="mt-1"><strong class="text-white">Documentaries & Podcasts</strong>: <span class="text-purple-400">5-10 business days</span> depending on complexity.</p>
+                        <p class="mt-2">Rush delivery available for an additional fee. I always communicate realistic timelines upfront so you can plan your content calendar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/[0.01] border border-white/[0.04] rounded-xl overflow-hidden cursor-pointer hover:border-white/[0.08] transition-colors" onclick="toggleFaq(this)">
+                <div class="p-5 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-sync-alt text-purple-400 text-xs"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-white">How do revisions work? What if I don't like the first cut?</span>
+                    </div>
+                    <span class="faq-icon text-purple-400 text-lg transition-transform duration-200 flex-shrink-0 ml-3">+</span>
+                </div>
+                <div class="faq-answer px-5 pb-5">
+                    <div class="pl-11 text-xs text-gray-400 leading-relaxed">
+                        <p>Every package includes revision rounds (2-3 depending on tier). Here's how it works:</p>
+                        <ul class="mt-2 space-y-1.5">
+                            <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">1.</span> I deliver the first draft based on your brief and reference videos.</li>
+                            <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">2.</span> You provide timestamped feedback via Google Docs or Loom.</li>
+                            <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">3.</span> I implement changes and send the updated version.</li>
+                        </ul>
+                        <p class="mt-2">Still not satisfied? I offer a <strong class="text-white">100% money-back guarantee</strong> on the first draft if we're not aligned on creative direction. Your satisfaction is my priority.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/[0.01] border border-white/[0.04] rounded-xl overflow-hidden cursor-pointer hover:border-white/[0.08] transition-colors" onclick="toggleFaq(this)">
+                <div class="p-5 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-comments text-purple-400 text-xs"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-white">How do we communicate during the project?</span>
+                    </div>
+                    <span class="faq-icon text-purple-400 text-lg transition-transform duration-200 flex-shrink-0 ml-3">+</span>
+                </div>
+                <div class="faq-answer px-5 pb-5">
+                    <div class="pl-11 text-xs text-gray-400 leading-relaxed">
+                        <p>I believe in <strong class="text-white">over-communication</strong> to avoid surprises:</p>
+                        <ul class="mt-2 space-y-1.5">
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> <strong class="text-white">Slack / Discord</strong> for real-time chat and quick updates.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> <strong class="text-white">Frame.io</strong> for video feedback and annotations.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> <strong class="text-white">Google Drive / Dropbox</strong> for asset sharing.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> <strong class="text-white">Weekly check-in calls</strong> for long-term projects.</li>
+                        </ul>
+                        <p class="mt-2">You'll never wonder about project status — I send progress updates at every milestone.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/[0.01] border border-white/[0.04] rounded-xl overflow-hidden cursor-pointer hover:border-white/[0.08] transition-colors" onclick="toggleFaq(this)">
+                <div class="p-5 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-file-export text-purple-400 text-xs"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-white">What file formats and resolutions do you deliver?</span>
+                    </div>
+                    <span class="faq-icon text-purple-400 text-lg transition-transform duration-200 flex-shrink-0 ml-3">+</span>
+                </div>
+                <div class="faq-answer px-5 pb-5">
+                    <div class="pl-11 text-xs text-gray-400 leading-relaxed">
+                        <p>All videos are delivered in <strong class="text-white">MP4 (H.264)</strong> optimized for your platform:</p>
+                        <ul class="mt-2 space-y-1.5">
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> <strong class="text-white">YouTube:</strong> 4K or 1080p, 24/30/60fps as requested.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> <strong class="text-white">Instagram/TikTok:</strong> 1080x1920 (9:16), optimized file size.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> <strong class="text-white">Podcasts:</strong> 1080p with audiogram waveform versions.</li>
+                        </ul>
+                        <p class="mt-2">Need a specific format? Just ask — I can deliver in ProRes, MOV, or any custom spec your workflow requires.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/[0.01] border border-white/[0.04] rounded-xl overflow-hidden cursor-pointer hover:border-white/[0.08] transition-colors" onclick="toggleFaq(this)">
+                <div class="p-5 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-credit-card text-purple-400 text-xs"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-white">What are your payment terms? Do you require upfront payment?</span>
+                    </div>
+                    <span class="faq-icon text-purple-400 text-lg transition-transform duration-200 flex-shrink-0 ml-3">+</span>
+                </div>
+                <div class="faq-answer px-5 pb-5">
+                    <div class="pl-11 text-xs text-gray-400 leading-relaxed">
+                        <p>For <strong class="text-white">new clients</strong>: 50% upfront, 50% on delivery. This protects both of us and ensures commitment.</p>
+                        <p class="mt-1">For <strong class="text-white">retainer/ongoing partnerships</strong>: Net-15 or monthly invoicing available.</p>
+                        <p class="mt-2">I accept payments via:</p>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="text-[10px] bg-white/[0.03] border border-white/[0.06] px-2 py-1 rounded">Wise</span>
+                            <span class="text-[10px] bg-white/[0.03] border border-white/[0.06] px-2 py-1 rounded">Bank Transfer</span>
+                            <span class="text-[10px] bg-white/[0.03] border border-white/[0.06] px-2 py-1 rounded">Upwork Escrow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/[0.01] border border-white/[0.04] rounded-xl overflow-hidden cursor-pointer hover:border-white/[0.08] transition-colors" onclick="toggleFaq(this)">
+                <div class="p-5 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-handshake text-purple-400 text-xs"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-white">Do you offer discounts for bulk or long-term projects?</span>
+                    </div>
+                    <span class="faq-icon text-purple-400 text-lg transition-transform duration-200 flex-shrink-0 ml-3">+</span>
+                </div>
+                <div class="faq-answer px-5 pb-5">
+                    <div class="pl-11 text-xs text-gray-400 leading-relaxed">
+                        <p>Absolutely! I love building long-term relationships with creators and brands:</p>
+                        <ul class="mt-2 space-y-1.5">
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> <strong class="text-white">10+ videos/month:</strong> 15% discount on all packages.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> <strong class="text-white">Retainer contracts:</strong> Locked-in rates + priority scheduling.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> <strong class="text-white">Channel management:</strong> Editing + thumbnail + title optimization bundle.</li>
+                        </ul>
+                        <p class="mt-2">Let's discuss your content calendar and find a package that scales with your growth.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/[0.01] border border-white/[0.04] rounded-xl overflow-hidden cursor-pointer hover:border-white/[0.08] transition-colors" onclick="toggleFaq(this)">
+                <div class="p-5 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-lock text-purple-400 text-xs"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-white">Will you sign an NDA? How do you handle confidential content?</span>
+                    </div>
+                    <span class="faq-icon text-purple-400 text-lg transition-transform duration-200 flex-shrink-0 ml-3">+</span>
+                </div>
+                <div class="faq-answer px-5 pb-5">
+                    <div class="pl-11 text-xs text-gray-400 leading-relaxed">
+                        <p>Yes, I'm happy to sign <strong class="text-white">NDAs</strong> for sensitive projects. Your content security is non-negotiable:</p>
+                        <ul class="mt-2 space-y-1.5">
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> All files stored on encrypted drives with 2FA.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> Project files deleted 30 days after delivery (unless you request otherwise).</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-purple-400 text-[10px] mt-1"></i> Never share client work in my portfolio without explicit written permission.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 text-center">
+            <p class="text-sm text-gray-400 mb-4">Still have questions? I'm here to help.</p>
+            <a href="#contact" class="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-500 text-white text-sm font-semibold px-6 py-3 rounded-full transition-all shadow-lg shadow-purple-600/20">
+                <i class="fas fa-paper-plane"></i> Ask Me Anything
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-16 border-t border-white/[0.03]">
+        <div class="text-center max-w-xl mx-auto mb-12">
+            <span class="text-purple-400 text-xs font-semibold uppercase tracking-widest">Contact</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight mt-2">Let's Work Together</h2>
+            <p class="text-sm text-gray-500 mt-3">Tell me about your project and I'll get back to you within 24 hours.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white/[0.01] border border-white/[0.04] rounded-2xl p-6">
+                <form onsubmit="handleFormSubmit(event)">
+                    <div class="space-y-4">
+                        <div>
+                            <label class="text-xs text-gray-400 mb-1.5 block">Your Name</label>
+                            <input type="text" placeholder="John Doe" class="contact-input w-full bg-white/[0.02] border border-white/[0.06] rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 transition-all">
+                        </div>
+                        <div>
+                            <label class="text-xs text-gray-400 mb-1.5 block">Email Address</label>
+                            <input type="email" placeholder="john@example.com" class="contact-input w-full bg-white/[0.02] border border-white/[0.06] rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 transition-all">
+                        </div>
+                        <div>
+                            <label class="text-xs text-gray-400 mb-1.5 block">Project Type</label>
+                            <select class="contact-input w-full bg-white/[0.02] border border-white/[0.06] rounded-xl px-4 py-3 text-sm text-gray-400 transition-all appearance-none cursor-pointer">
+                                <option value="">Select project type...</option>
+                                <option value="youtube">YouTube Long Form Video</option>
+                                <option value="shorts">Shorts / Reels / TikTok</option>
+                                <option value="documentary">Documentary / Film</option>
+                                <option value="podcast">Podcast Editing</option>
+                                <option value="ugc">AI UGC / Ad Content</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-xs text-gray-400 mb-1.5 block">Project Details</label>
+                            <textarea rows="4" placeholder="Tell me about your project, timeline, and any specific requirements..." class="contact-input w-full bg-white/[0.02] border border-white/[0.06] rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 transition-all resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-500 text-white text-sm font-semibold py-3 rounded-xl transition-all shadow-lg shadow-purple-600/20 flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-white/[0.01] border border-white/[0.04] rounded-2xl p-6">
+                    <h3 class="text-sm font-semibold text-white mb-4">Direct Contact</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center">
+                                <i class="fas fa-envelope text-purple-400 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500">Email</div>
+                                <a href="mailto:siamtarafder818@gmail.com" class="text-sm text-white hover:text-purple-400 transition-colors">siamtarafder818@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center">
+                                <i class="fas fa-globe text-purple-400 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500">Upwork</div>
+                                <a href="#" class="text-sm text-white hover:text-purple-400 transition-colors">Hire on Upwork</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center">
+                                <i class="fab fa-discord text-purple-400 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500">Discord</div>
+                                <span class="text-sm text-white">Siam_Tarafder_</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/[0.01] border border-white/[0.04] rounded-2xl p-6">
+                    <h3 class="text-sm font-semibold text-white mb-4">Availability</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="text-gray-400">Current Status</span>
+                            <span class="text-emerald-400 flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                Available for new projects
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="text-gray-400">Response Time</span>
+                            <span class="text-white">Within 24 hours</span>
+                        </div>
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="text-gray-400">Working Hours</span>
+                            <span class="text-white">Mon - Sat, 9AM - 8PM GMT+6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/[0.01] border border-white/[0.04] rounded-2xl p-6">
+                    <h3 class="text-sm font-semibold text-white mb-4">Follow My Work</h3>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-gray-400 hover:text-white hover:border-purple-500/30 hover:bg-purple-500/10 transition-all">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-gray-400 hover:text-white hover:border-purple-500/30 hover:bg-purple-500/10 transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-gray-400 hover:text-white hover:border-purple-500/30 hover:bg-purple-500/10 transition-all">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-gray-400 hover:text-white hover:border-purple-500/30 hover:bg-purple-500/10 transition-all">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-gray-400 hover:text-white hover:border-purple-500/30 hover:bg-purple-500/10 transition-all">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/[0.04] bg-[#020203] py-12 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center text-xs font-extrabold text-white">ST</span>
+                <span class="text-lg font-bold text-white">SIAM TARAFDER</span>
+            </div>
+            <p class="text-sm text-gray-500 max-w-md mx-auto">Professional Video Editor specializing in high-retention content. Creating edits that scale brands and captivate audiences.</p>
+            <div class="flex justify-center gap-6 mt-6 text-xs text-gray-600">
+                <a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a>
+                <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+                <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <p class="text-[10px] text-gray-700 mt-8">&copy; 2026 Siam Tarafder. All rights reserved. Crafted with precision.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        function filterCategory(category, element) {
+            const items = document.querySelectorAll('.portfolio-item');
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('border-purple-500', 'text-white');
+                btn.classList.add('border-transparent', 'text-gray-400');
+            });
+            element.classList.remove('border-transparent', 'text-gray-400');
+            element.classList.add('border-purple-500', 'text-white');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                    item.style.animation = 'fadeIn 0.4s ease-out';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+        function toggleFaq(element) {
+            const isActive = element.classList.contains('faq-active');
+            document.querySelectorAll('.faq-active').forEach(el => {
+                if (el !== element) {
+                    el.classList.remove('faq-active');
+                    el.querySelector('.faq-icon').textContent = '+';
+                }
+            });
+            if (!isActive) {
+                element.classList.add('faq-active');
+                element.querySelector('.faq-icon').textContent = '−';
+            } else {
+                element.classList.remove('faq-active');
+                element.querySelector('.faq-icon').textContent = '+';
+            }
+        }
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const btn = event.target.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.disabled = true;
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                btn.classList.remove('bg-purple-600');
+                btn.classList.add('bg-emerald-600');
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.remove('bg-emerald-600');
+                    btn.classList.add('bg-purple-600');
+                    btn.disabled = false;
+                    event.target.reset();
+                }, 2000);
+            }, 1500);
+        }
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+        const style = document.createElement('style');
+        style.textContent = '@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }';
+        document.head.appendChild(style);
+        const observerOptions = { threshold: 0.5, rootMargin: '0px' };
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bars = entry.target.querySelectorAll('.skill-bar');
+                    bars.forEach(bar => { bar.style.width = bar.style.width; });
+                }
+            });
+        }, observerOptions);
+        const skillsSection = document.getElementById('skills');
+        if (skillsSection) { skillObserver.observe(skillsSection); }
+    </script>
+</body>
+</html>
