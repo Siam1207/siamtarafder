@@ -1,0 +1,12 @@
+# Netlify configuration for Siam Tarafder static site
+
+# Publish the repository root (this repo serves the static HTML from the repository root)
+[build]
+  publish = "."
+  command = ""
+
+# Set the Netlify site ID (used by CLI or CI deploys)
+[context.production.environment]
+  NETLIFY_SITE_ID = "7954e74a-c9d8-4482-8f80-d9296b3b8b49"
+
+# Optional: Add more environment variables under [context.production.environment] if needed
