@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Siam Tarafder is a professional video editor specializing in high-retention YouTube videos, shorts, documentaries, podcasts, and AI UGC content.">
+  <title>Siam Tarafder | Professional Video Editor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root { color-scheme: dark; --ink: #050508; --violet: #8b5cf6; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--ink); color: #e2e8f0; font-family: "Plus Jakarta Sans", sans-serif; overflow-x: hidden; }
+    body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 60; opacity: .025; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E"); }
+    .gradient-text { background: linear-gradient(120deg, #c4b5fd 0%, #818cf8 47%, #f9a8d4 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .glow-card { transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease; }
+    .glow-card:hover { transform: translateY(-5px); border-color: rgba(139,92,246,.28); box-shadow: 0 24px 70px rgba(67,39,122,.13); }
+    .portfolio-item { animation: reveal .45s ease both; }
+    .faq-answer { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows .35s ease, opacity .3s ease; }
+    .faq-answer > div { overflow: hidden; }
+    .faq-active .faq-answer { grid-template-rows: 1fr; opacity: 1; }
+    .faq-active .faq-icon { transform: rotate(45deg); }
+    .contact-input:focus { outline: none; border-color: rgba(167,139,250,.62); box-shadow: 0 0 0 3px rgba(139,92,246,.12); }
+    .scrollbar-none::-webkit-scrollbar { display: none; }
+    .scrollbar-none { scrollbar-width: none; }
+    .badge-pulse { animation: pulse 2.5s infinite; }
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .skill-fill { transform: scaleX(0); transform-origin: left; transition: transform 1.15s cubic-bezier(.2,.8,.2,1); }
+    .visible .skill-fill { transform: scaleX(1); }
+    @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(139,92,246,.3); } 50% { box-shadow: 0 0 0 9px rgba(139,92,246,0); } }
+    @keyframes reveal { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } .reveal { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body class="min-h-screen antialiased selection:bg-purple-500/30 selection:text-white">
+  <div class="fixed left-1/2 top-0 h-[520px] w-full max-w-7xl -translate-x-1/2 bg-gradient-to-b from-purple-900/15 to-transparent blur-[140px] pointer-events-none"></div>
+  <div class="fixed bottom-0 right-0 h-[420px] w-[620px] bg-gradient-to-t from-indigo-900/10 to-transparent blur-[130px] pointer-events-none"></div>
+
+  <header class="sticky top-0 z-50 border-b border-white/[0.04] bg-[#050508]/80 backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
+      <a href="#top" class="flex items-center gap-2.5 text-sm font-extrabold tracking-[.08em] text-white" aria-label="Siam Tarafder home">
+        <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 text-[11px] tracking-normal shadow-lg shadow-purple-950/50">ST</span>
+        SIAM TARAFDER
+      </a>
+      <nav class="hidden items-center gap-8 text-sm md:flex" aria-label="Primary navigation">
+        <a href="#portfolio" class="text-gray-400 transition-colors hover:text-white">Portfolio</a>
+        <a href="#skills" class="text-gray-400 transition-colors hover:text-white">Skills</a>
+        <a href="#pricing" class="text-gray-400 transition-colors hover:text-white">Pricing</a>
+        <a href="#faq" class="text-gray-400 transition-colors hover:text-white">FAQs</a>
+        <a href="#contact" class="rounded-full bg-purple-600 px-5 py-2.5 text-xs font-semibold text-white shadow-lg shadow-purple-600/20 transition hover:bg-purple-500">Hire Me</a>
+      </nav>
+      <button id="menu-button" class="grid h-10 w-10 place-items-center rounded-xl border border-white/[0.06] text-white md:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="hidden border-t border-white/[0.04] bg-[#050508]/95 px-6 py-4 backdrop-blur-xl md:hidden" aria-label="Mobile navigation">
+      <div class="space-y-1">
+        <a href="#portfolio" class="block rounded-lg px-3 py-2.5 text-gray-300 hover:bg-white/[0.04]">Portfolio</a>
+        <a href="#skills" class="block rounded-lg px-3 py-2.5 text-gray-300 hover:bg-white/[0.04]">Skills</a>
+        <a href="#pricing" class="block rounded-lg px-3 py-2.5 text-gray-300 hover:bg-white/[0.04]">Pricing</a>
+        <a href="#faq" class="block rounded-lg px-3 py-2.5 text-gray-300 hover:bg-white/[0.04]">FAQs</a>
+        <a href="#contact" class="mt-3 block rounded-full bg-purple-600 py-2.5 text-center text-sm font-semibold text-white">Hire Me</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="mx-auto max-w-6xl px-6 pb-12 pt-20 md:pt-28">
+      <div class="grid items-center gap-14 lg:grid-cols-[1.2fr_.8fr]">
+        <div class="reveal">
+          <div class="badge-pulse mb-7 inline-flex items-center gap-2 rounded-full border border-purple-500/20 bg-purple-500/10 px-4 py-2 text-xs font-medium text-purple-200">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+            Available for select projects
+          </div>
+          <h1 class="max-w-4xl text-5xl font-extrabold leading-[1.04] tracking-[-.055em] text-white sm:text-6xl md:text-7xl">
+            Edits built to hold <span class="gradient-text">attention.</span>
+          </h1>
+          <p class="mt-7 max-w-2xl text-base font-light leading-8 text-gray-400 md:text-lg">I’m Siam, a professional video editor shaping raw footage into high-retention YouTube videos, shorts, documentaries, podcasts, and AI-led campaigns.</p>
+          <div class="mt-9 flex flex-wrap gap-4">
+            <a href="#portfolio" class="rounded-full bg-purple-600 px-7 py-3.5 text-sm font-semibold text-white shadow-xl shadow-purple-900/30 transition hover:-translate-y-0.5 hover:bg-purple-500">Explore the work</a>
+            <a href="#contact" class="rounded-full border border-white/[0.1] bg-white/[0.03] px-7 py-3.5 text-sm font-medium text-white transition hover:bg-white/[0.07]">Get a free quote</a>
+          </div>
+        </div>
+        <div class="reveal relative lg:pl-8">
+          <div class="absolute -inset-7 rounded-full bg-purple-600/10 blur-3xl"></div>
+          <div class="relative overflow-hidden rounded-[2rem] border border-white/[0.08] bg-white/[0.025] p-5 shadow-2xl shadow-black/40">
+            <div class="mb-8 flex items-center justify-between">
+              <span class="text-[10px] font-bold uppercase tracking-[.2em] text-purple-300">Editor profile</span>
+              <span class="flex items-center gap-2 text-[10px] text-gray-500"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>GMT+6</span>
+            </div>
+            <div class="space-y-5">
+              <div class="border-b border-white/[0.06] pb-5"><div class="text-4xl font-extrabold tracking-tight text-white">50<span class="text-purple-400">+</span></div><div class="mt-1 text-xs text-gray-500">projects delivered</div></div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="rounded-2xl bg-white/[0.025] p-4"><div class="text-xl font-bold text-white">24–48h</div><div class="mt-1 text-[10px] text-gray-500">short-form delivery</div></div>
+                <div class="rounded-2xl bg-white/[0.025] p-4"><div class="text-xl font-bold text-white">98%</div><div class="mt-1 text-[10px] text-gray-500">client satisfaction</div></div>
+              </div>
+              <div class="flex flex-wrap gap-2 pt-1 text-[10px] text-gray-400">
+                <span class="rounded-full border border-white/[0.06] px-3 py-1.5">Premiere Pro</span><span class="rounded-full border border-white/[0.06] px-3 py-1.5">CapCut Pro</span><span class="rounded-full border border-white/[0.06] px-3 py-1.5">AI workflows</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-5xl px-6 py-12 reveal">
+      <div class="glow-card relative rounded-[1.6rem] border border-white/[0.07] bg-white/[0.018] p-3 md:p-4">
+        <div class="absolute -top-3 left-7 z-10 rounded-full bg-purple-600 px-3 py-1 text-[9px] font-bold uppercase tracking-[.16em] text-white"><i class="fas fa-play mr-1.5"></i>Featured gig video</div>
+        <div class="group relative flex aspect-video items-center justify-center overflow-hidden rounded-[1.2rem] border border-white/[0.04] bg-[radial-gradient(circle_at_30%_20%,rgba(139,92,246,.28),transparent_36%),linear-gradient(145deg,#12101a,#07070b)]">
+          <div class="absolute inset-0 opacity-25" style="background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:42px 42px"></div>
+          <div class="relative z-10 px-8 text-center">
+            <button type="button" class="mx-auto grid h-20 w-20 place-items-center rounded-full border border-white/20 bg-white/10 text-xl text-white backdrop-blur transition group-hover:scale-110 group-hover:bg-purple-600" aria-label="Play featured video"><i class="fas fa-play ml-1"></i></button>
+            <h2 class="mt-5 text-lg font-semibold text-white">Your introduction reel belongs here</h2>
+            <p class="mx-auto mt-2 max-w-md text-sm leading-6 text-gray-400">Replace this showcase panel with your YouTube or Vimeo embed when your final gig video is ready.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="mx-auto max-w-6xl border-t border-white/[0.04] px-6 py-20 reveal scroll-mt-20">
+      <div class="grid gap-12 lg:grid-cols-[.75fr_1.25fr]">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-[.2em] text-purple-400">Expertise</span>
+          <h2 class="mt-3 text-4xl font-bold tracking-[-.04em] text-white">A practical toolkit for every frame.</h2>
+          <p class="mt-5 text-sm leading-7 text-gray-500">Built through hands-on work across creator channels, brand campaigns, documentary narratives, and fast-turn social content.</p>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2">
+          <div class="rounded-3xl border border-white/[0.06] bg-white/[0.018] p-6">
+            <h3 class="mb-6 text-sm font-semibold text-white"><i class="fas fa-sliders mr-2 text-purple-400"></i>Software proficiency</h3>
+            <div class="space-y-5">
+              <div><div class="mb-2 flex justify-between text-xs"><span>Adobe Premiere Pro</span><span class="text-purple-400">95%</span></div><div class="h-1.5 overflow-hidden rounded-full bg-white/5"><div class="skill-fill h-full w-[95%] rounded-full bg-gradient-to-r from-purple-500 to-indigo-400"></div></div></div>
+              <div><div class="mb-2 flex justify-between text-xs"><span>CapCut Pro</span><span class="text-purple-400">90%</span></div><div class="h-1.5 overflow-hidden rounded-full bg-white/5"><div class="skill-fill h-full w-[90%] rounded-full bg-gradient-to-r from-purple-500 to-indigo-400"></div></div></div>
+              <div><div class="mb-2 flex justify-between text-xs"><span>Motion graphics</span><span class="text-purple-400">82%</span></div><div class="h-1.5 overflow-hidden rounded-full bg-white/5"><div class="skill-fill h-full w-[82%] rounded-full bg-gradient-to-r from-purple-500 to-indigo-400"></div></div></div>
+              <div><div class="mb-2 flex justify-between text-xs"><span>AI production tools</span><span class="text-purple-400">88%</span></div><div class="h-1.5 overflow-hidden rounded-full bg-white/5"><div class="skill-fill h-full w-[88%] rounded-full bg-gradient-to-r from-purple-500 to-indigo-400"></div></div></div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="rounded-2xl border border-white/[0.05] bg-white/[0.018] p-4"><i class="fas fa-video text-purple-400"></i><h3 class="mt-4 text-xs font-semibold text-white">YouTube long form</h3><p class="mt-1 text-[10px] text-gray-500">Retention editing</p></div>
+            <div class="rounded-2xl border border-white/[0.05] bg-white/[0.018] p-4"><i class="fas fa-mobile-screen text-pink-400"></i><h3 class="mt-4 text-xs font-semibold text-white">Shorts & reels</h3><p class="mt-1 text-[10px] text-gray-500">Hooks and captions</p></div>
+            <div class="rounded-2xl border border-white/[0.05] bg-white/[0.018] p-4"><i class="fas fa-film text-indigo-400"></i><h3 class="mt-4 text-xs font-semibold text-white">Documentaries</h3><p class="mt-1 text-[10px] text-gray-500">Narrative pacing</p></div>
+            <div class="rounded-2xl border border-white/[0.05] bg-white/[0.018] p-4"><i class="fas fa-microphone text-cyan-400"></i><h3 class="mt-4 text-xs font-semibold text-white">Podcasts</h3><p class="mt-1 text-[10px] text-gray-500">Multi-cam sync</p></div>
+            <div class="rounded-2xl border border-white/[0.05] bg-white/[0.018] p-4"><i class="fas fa-wand-magic-sparkles text-emerald-400"></i><h3 class="mt-4 text-xs font-semibold text-white">AI UGC</h3><p class="mt-1 text-[10px] text-gray-500">Rapid ad variants</p></div>
+            <div class="rounded-2xl border border-white/[0.05] bg-white/[0.018] p-4"><i class="fas fa-palette text-amber-400"></i><h3 class="mt-4 text-xs font-semibold text-white">Color correction</h3><p class="mt-1 text-[10px] text-gray-500">Consistent finish</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="mx-auto max-w-6xl border-t border-white/[0.04] px-6 py-20 scroll-mt-20">
+      <div class="reveal flex flex-col justify-between gap-6 md:flex-row md:items-end">
+        <div><span class="text-xs font-semibold uppercase tracking-[.2em] text-purple-400">Selected work</span><h2 class="mt-3 text-4xl font-bold tracking-[-.04em] text-white">Different formats. One sharp standard.</h2></div>
+        <p class="max-w-sm text-sm leading-7 text-gray-500">A sample reel spanning creator content, branded shorts, narrative edits, and AI-assisted production.</p>
+      </div>
+      <div class="scrollbar-none mt-10 flex gap-2 overflow-x-auto border-b border-white/[0.06] pb-2 reveal" role="tablist" aria-label="Portfolio filters">
+        <button data-filter="all" class="tab-btn whitespace-nowrap border-b-2 border-purple-500 px-4 py-3 text-sm font-medium text-white" type="button">All work</button>
+        <button data-filter="youtube-long" class="tab-btn whitespace-nowrap border-b-2 border-transparent px-4 py-3 text-sm text-gray-400" type="button">YouTube long form</button>
+        <button data-filter="shorts" class="tab-btn whitespace-nowrap border-b-2 border-transparent px-4 py-3 text-sm text-gray-400" type="button">Shorts & reels</button>
+        <button data-filter="documentary" class="tab-btn whitespace-nowrap border-b-2 border-transparent px-4 py-3 text-sm text-gray-400" type="button">Documentaries</button>
+        <button data-filter="podcast" class="tab-btn whitespace-nowrap border-b-2 border-transparent px-4 py-3 text-sm text-gray-400" type="button">Podcasts</button>
+        <button data-filter="ai-ugc" class="tab-btn whitespace-nowrap border-b-2 border-transparent px-4 py-3 text-sm text-gray-400" type="button">AI UGC</button>
+      </div>
+      <div id="portfolio-grid" class="mt-9 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <article class="portfolio-item youtube-long glow-card overflow-hidden rounded-3xl border border-white/[0.06] bg-white/[0.018]">
+          <div class="group relative aspect-video overflow-hidden bg-[#171420]"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=900&q=82" alt="Video editing screens for a technology channel" class="h-full w-full object-cover opacity-70 transition duration-500 group-hover:scale-105 group-hover:opacity-90"><span class="absolute bottom-3 left-3 rounded bg-black/60 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-purple-300">YouTube long</span></div>
+          <div class="p-5"><h3 class="text-sm font-semibold text-white">Tech review — retention edit</h3><p class="mt-2 text-xs leading-6 text-gray-500">Jump cuts, layered B-roll, dynamic zooms, and pattern interrupts designed around audience drop-off points.</p><div class="mt-4 flex gap-2 text-[9px] text-gray-500"><span>Premiere Pro</span><span>•</span><span>Motion graphics</span></div></div>
+        </article>
+        <article class="portfolio-item shorts glow-card overflow-hidden rounded-3xl border border-white/[0.06] bg-white/[0.018]">
+          <div class="group relative aspect-video overflow-hidden bg-[#171420]"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=900&q=82" alt="Phone displaying social video content" class="h-full w-full object-cover opacity-70 transition duration-500 group-hover:scale-105 group-hover:opacity-90"><span class="absolute bottom-3 left-3 rounded bg-black/60 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-pink-300">Shorts / reels</span></div>
+          <div class="p-5"><h3 class="text-sm font-semibold text-white">Fitness brand — hook series</h3><p class="mt-2 text-xs leading-6 text-gray-500">A batch of fast-paced vertical edits with kinetic captions, punchy sound design, and clear visual hierarchy.</p><div class="mt-4 flex gap-2 text-[9px] text-gray-500"><span>CapCut Pro</span><span>•</span><span>Caption design</span></div></div>
+        </article>
+        <article class="portfolio-item documentary glow-card overflow-hidden rounded-3xl border border-white/[0.06] bg-white/[0.018]">
+          <div class="group relative aspect-video overflow-hidden bg-[#171420]"><img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=900&q=82" alt="Cinema camera and film production scene" class="h-full w-full object-cover opacity-70 transition duration-500 group-hover:scale-105 group-hover:opacity-90"><span class="absolute bottom-3 left-3 rounded bg-black/60 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-indigo-300">Documentary</span></div>
+          <div class="p-5"><h3 class="text-sm font-semibold text-white">Street food stories — mini doc</h3><p class="mt-2 text-xs leading-6 text-gray-500">Full post-production with narrative assembly, atmospheric sound design, clean dialogue, and restrained color work.</p><div class="mt-4 flex gap-2 text-[9px] text-gray-500"><span>Story pacing</span><span>•</span><span>Color correction</span></div></div>
+        </article>
+        <article class="portfolio-item podcast glow-card overflow-hidden rounded-3xl border border-white/[0.06] bg-white/[0.018]">
+          <div class="group relative aspect-video overflow-hidden bg-[#171420]"><img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=900&q=82" alt="Podcast microphone in a recording studio" class="h-full w-full object-cover opacity-70 transition duration-500 group-hover:scale-105 group-hover:opacity-90"><span class="absolute bottom-3 left-3 rounded bg-black/60 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-cyan-300">Podcast</span></div>
+          <div class="p-5"><h3 class="text-sm font-semibold text-white">Business talk — multi-cam edit</h3><p class="mt-2 text-xs leading-6 text-gray-500">Four-camera sync, editorial switching, animated lower thirds, chapter moments, and short-form derivatives.</p><div class="mt-4 flex gap-2 text-[9px] text-gray-500"><span>Multi-cam</span><span>•</span><span>Audio cleanup</span></div></div>
+        </article>
+        <article class="portfolio-item ai-ugc glow-card overflow-hidden rounded-3xl border border-white/[0.06] bg-white/[0.018]">
+          <div class="group relative aspect-video overflow-hidden bg-[#171420]"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=82" alt="Abstract artificial intelligence portrait" class="h-full w-full object-cover opacity-70 transition duration-500 group-hover:scale-105 group-hover:opacity-90"><span class="absolute bottom-3 left-3 rounded bg-black/60 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-emerald-300">AI UGC</span></div>
+          <div class="p-5"><h3 class="text-sm font-semibold text-white">SaaS launch — UGC ad variants</h3><p class="mt-2 text-xs leading-6 text-gray-500">AI-assisted scripting, avatar production, voice workflows, captioning, and rapid creative versioning.</p><div class="mt-4 flex gap-2 text-[9px] text-gray-500"><span>AI workflow</span><span>•</span><span>CapCut</span></div></div>
+        </article>
+        <article class="portfolio-item youtube-long glow-card overflow-hidden rounded-3xl border border-white/[0.06] bg-white/[0.018]">
+          <div class="group relative aspect-video overflow-hidden bg-[#171420]"><img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=900&q=82" alt="Professional video camera filming a production" class="h-full w-full object-cover opacity-70 transition duration-500 group-hover:scale-105 group-hover:opacity-90"><span class="absolute bottom-3 left-3 rounded bg-black/60 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-purple-300">YouTube long</span></div>
+          <div class="p-5"><h3 class="text-sm font-semibold text-white">Gaming channel — cinematic montage</h3><p class="mt-2 text-xs leading-6 text-gray-500">Beat-synced gameplay, cinematic opening sequences, graphic transitions, and carefully controlled visual energy.</p><div class="mt-4 flex gap-2 text-[9px] text-gray-500"><span>Premiere Pro</span><span>•</span><span>Montage</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl border-t border-white/[0.04] px-6 py-20 reveal">
+      <div class="mb-10"><span class="text-xs font-semibold uppercase tracking-[.2em] text-purple-400">Client notes</span><h2 class="mt-3 text-4xl font-bold tracking-[-.04em] text-white">Trusted with the final cut.</h2></div>
+      <div class="grid gap-5 lg:grid-cols-[1.2fr_.8fr_.8fr]">
+        <figure class="rounded-3xl border border-purple-500/20 bg-purple-950/10 p-7"><div class="mb-5 text-xs text-amber-400">★★★★★</div><blockquote class="text-lg leading-8 text-gray-200">“Siam transformed our raw footage into a polished, engaging video that noticeably improved our watch time. His sense of pacing is exceptional.”</blockquote><figcaption class="mt-7 border-t border-white/[0.06] pt-5 text-xs"><strong class="text-white">James Davidson</strong><span class="ml-2 text-gray-500">Technology creator</span></figcaption></figure>
+        <figure class="rounded-3xl border border-white/[0.06] bg-white/[0.018] p-6"><div class="mb-5 text-xs text-amber-400">★★★★★</div><blockquote class="text-sm leading-7 text-gray-300">“The captions, sound design, and pace were exactly what our short-form campaign needed.”</blockquote><figcaption class="mt-7 border-t border-white/[0.06] pt-5 text-xs"><strong class="text-white">Sarah Kim</strong><span class="block pt-1 text-gray-500">Marketing director</span></figcaption></figure>
+        <figure class="rounded-3xl border border-white/[0.06] bg-white/[0.018] p-6"><div class="mb-5 text-xs text-amber-400">★★★★★</div><blockquote class="text-sm leading-7 text-gray-300">“Fast turnaround, thoughtful communication, and a strong understanding of our product voice.”</blockquote><figcaption class="mt-7 border-t border-white/[0.06] pt-5 text-xs"><strong class="text-white">Michael Ross</strong><span class="block pt-1 text-gray-500">SaaS founder</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section id="pricing" class="mx-auto max-w-6xl border-t border-white/[0.04] px-6 py-20 scroll-mt-20">
+      <div class="reveal text-center"><span class="text-xs font-semibold uppercase tracking-[.2em] text-purple-400">Pricing</span><h2 class="mt-3 text-4xl font-bold tracking-[-.04em] text-white">A clear starting point.</h2><p class="mx-auto mt-4 max-w-xl text-sm leading-7 text-gray-500">Final quotes reflect footage volume, complexity, graphics, and delivery schedule.</p></div>
+      <div class="mt-12 grid gap-6 md:grid-cols-3 reveal">
+        <article class="glow-card flex flex-col rounded-3xl border border-white/[0.06] bg-white/[0.018] p-6"><i class="fas fa-bolt text-amber-400"></i><h3 class="mt-5 text-lg font-bold text-white">Starter pack</h3><p class="mt-1 text-xs text-gray-500">One short-form edit up to 60 seconds.</p><div class="mt-5 text-3xl font-extrabold text-white">$45</div><ul class="mt-6 flex-1 space-y-3 border-t border-white/[0.06] pt-5 text-xs text-gray-400"><li><i class="fas fa-check mr-2 text-purple-400"></i>Motion captions and SFX</li><li><i class="fas fa-check mr-2 text-purple-400"></i>Two revision rounds</li><li><i class="fas fa-check mr-2 text-purple-400"></i>48-hour delivery</li></ul><a href="#contact" class="mt-8 rounded-xl border border-white/[0.08] bg-white/[0.03] py-3 text-center text-xs font-semibold text-white hover:bg-white/[0.07]">Get started</a></article>
+        <article class="glow-card relative flex flex-col rounded-3xl border border-purple-500/30 bg-gradient-to-b from-purple-950/25 to-white/[0.018] p-6 shadow-2xl shadow-purple-950/20"><span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-purple-600 px-3 py-1 text-[9px] font-bold uppercase tracking-widest text-white">Most popular</span><i class="fas fa-rocket text-purple-400"></i><h3 class="mt-5 text-lg font-bold text-white">Growth package</h3><p class="mt-1 text-xs text-purple-300">One high-retention YouTube edit up to 10 minutes.</p><div class="mt-5 text-3xl font-extrabold text-white">$150</div><ul class="mt-6 flex-1 space-y-3 border-t border-purple-500/10 pt-5 text-xs text-gray-300"><li><i class="fas fa-check mr-2 text-purple-400"></i>Premium sound design and B-roll</li><li><i class="fas fa-check mr-2 text-purple-400"></i>Basic color correction</li><li><i class="fas fa-check mr-2 text-purple-400"></i>Thumbnail design and three revisions</li><li><i class="fas fa-check mr-2 text-purple-400"></i>Source files included</li></ul><a href="#contact" class="mt-8 rounded-xl bg-purple-600 py-3 text-center text-xs font-semibold text-white hover:bg-purple-500">Select package</a></article>
+        <article class="glow-card flex flex-col rounded-3xl border border-white/[0.06] bg-white/[0.018] p-6"><i class="fas fa-crown text-amber-400"></i><h3 class="mt-5 text-lg font-bold text-white">Premium narrative</h3><p class="mt-1 text-xs text-gray-500">Documentary, podcast, and cinematic projects.</p><div class="mt-5 text-3xl font-extrabold text-white">$350<span class="text-lg">+</span></div><ul class="mt-6 flex-1 space-y-3 border-t border-white/[0.06] pt-5 text-xs text-gray-400"><li><i class="fas fa-check mr-2 text-purple-400"></i>Full narrative edit</li><li><i class="fas fa-check mr-2 text-purple-400"></i>Custom motion graphics</li><li><i class="fas fa-check mr-2 text-purple-400"></i>Priority turnaround</li><li><i class="fas fa-check mr-2 text-purple-400"></i>Project archive included</li></ul><a href="#contact" class="mt-8 rounded-xl border border-white/[0.08] bg-white/[0.03] py-3 text-center text-xs font-semibold text-white hover:bg-white/[0.07]">Request a quote</a></article>
+      </div>
+    </section>
+
+    <section id="faq" class="mx-auto max-w-4xl border-t border-white/[0.04] px-6 py-20 scroll-mt-20">
+      <div class="reveal text-center"><span class="text-xs font-semibold uppercase tracking-[.2em] text-purple-400">FAQ</span><h2 class="mt-3 text-4xl font-bold tracking-[-.04em] text-white">Before we start.</h2></div>
+      <div class="mt-10 space-y-3 reveal">
+        <article class="faq-item rounded-2xl border border-white/[0.06] bg-white/[0.018]"><button class="faq-trigger flex w-full items-center justify-between gap-5 p-5 text-left text-sm font-semibold text-white" type="button" aria-expanded="false"><span>What software do you use?</span><span class="faq-icon text-xl font-light text-purple-400 transition-transform">+</span></button><div class="faq-answer"><div><p class="px-5 pb-5 text-xs leading-6 text-gray-400">Adobe Premiere Pro handles long-form, multi-cam, and narrative work. CapCut Pro supports fast social workflows, alongside AI tools such as Claude and Higgsfield where they add real production value.</p></div></div></article>
+        <article class="faq-item rounded-2xl border border-white/[0.06] bg-white/[0.018]"><button class="faq-trigger flex w-full items-center justify-between gap-5 p-5 text-left text-sm font-semibold text-white" type="button" aria-expanded="false"><span>What is the typical turnaround?</span><span class="faq-icon text-xl font-light text-purple-400 transition-transform">+</span></button><div class="faq-answer"><div><p class="px-5 pb-5 text-xs leading-6 text-gray-400">Short-form work generally takes 24–48 hours. YouTube edits take 3–5 business days, while documentaries and podcasts usually take 5–10 business days depending on footage and complexity.</p></div></div></article>
+        <article class="faq-item rounded-2xl border border-white/[0.06] bg-white/[0.018]"><button class="faq-trigger flex w-full items-center justify-between gap-5 p-5 text-left text-sm font-semibold text-white" type="button" aria-expanded="false"><span>How do revisions work?</span><span class="faq-icon text-xl font-light text-purple-400 transition-transform">+</span></button><div class="faq-answer"><div><p class="px-5 pb-5 text-xs leading-6 text-gray-400">Each package includes the revision rounds listed above. Timestamped notes through Frame.io, Loom, or a shared document keep feedback precise and turnaround fast.</p></div></div></article>
+        <article class="faq-item rounded-2xl border border-white/[0.06] bg-white/[0.018]"><button class="faq-trigger flex w-full items-center justify-between gap-5 p-5 text-left text-sm font-semibold text-white" type="button" aria-expanded="false"><span>Which formats and resolutions do you deliver?</span><span class="faq-icon text-xl font-light text-purple-400 transition-transform">+</span></button><div class="faq-answer"><div><p class="px-5 pb-5 text-xs leading-6 text-gray-400">Standard delivery is MP4 (H.264), optimized for the target platform in 1080p or 4K. ProRes, MOV, vertical 9:16, and custom export specifications are available on request.</p></div></div></article>
+        <article class="faq-item rounded-2xl border border-white/[0.06] bg-white/[0.018]"><button class="faq-trigger flex w-full items-center justify-between gap-5 p-5 text-left text-sm font-semibold text-white" type="button" aria-expanded="false"><span>Do you offer retainers and NDAs?</span><span class="faq-icon text-xl font-light text-purple-400 transition-transform">+</span></button><div class="faq-answer"><div><p class="px-5 pb-5 text-xs leading-6 text-gray-400">Yes. Monthly retainers are available for consistent content volume, and NDAs are welcome for confidential launches, unreleased content, or sensitive client material.</p></div></div></article>
+      </div>
+    </section>
+
+    <section id="contact" class="mx-auto max-w-5xl border-t border-white/[0.04] px-6 py-20 scroll-mt-20">
+      <div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
+        <div class="reveal"><span class="text-xs font-semibold uppercase tracking-[.2em] text-purple-400">Contact</span><h2 class="mt-3 text-4xl font-bold tracking-[-.04em] text-white">Bring me the raw cut.</h2><p class="mt-5 text-sm leading-7 text-gray-500">Share the format, runtime, footage volume, deadline, and a reference or two. I’ll reply with a clear next step within 24 hours.</p><div class="mt-9 space-y-4 text-sm"><a href="mailto:siamtarafder818@gmail.com" class="flex items-center gap-3 text-white hover:text-purple-300"><span class="grid h-10 w-10 place-items-center rounded-xl bg-purple-500/10 text-purple-400"><i class="fas fa-envelope"></i></span>siamtarafder818@gmail.com</a><div class="flex items-center gap-3 text-white"><span class="grid h-10 w-10 place-items-center rounded-xl bg-purple-500/10 text-purple-400"><i class="fab fa-discord"></i></span>Siam_Tarafder_</div></div></div>
+        <div class="reveal rounded-3xl border border-white/[0.07] bg-white/[0.018] p-6 md:p-8">
+          <form id="contact-form" name="project-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="project-inquiry">
+            <input type="hidden" name="subject" value="New portfolio inquiry">
+            <p class="hidden"><label>Do not fill this out: <input name="bot-field"></label></p>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div><label for="name" class="mb-2 block text-xs text-gray-400">Your name</label><input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name" class="contact-input w-full rounded-xl border border-white/[0.07] bg-white/[0.025] px-4 py-3 text-sm text-white placeholder-gray-600 transition"></div>
+              <div><label for="email" class="mb-2 block text-xs text-gray-400">Email address</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" class="contact-input w-full rounded-xl border border-white/[0.07] bg-white/[0.025] px-4 py-3 text-sm text-white placeholder-gray-600 transition"></div>
+            </div>
+            <div class="mt-4"><label for="project-type" class="mb-2 block text-xs text-gray-400">Project type</label><select id="project-type" name="project-type" required class="contact-input w-full rounded-xl border border-white/[0.07] bg-[#0b0b10] px-4 py-3 text-sm text-gray-300 transition"><option value="">Choose a format</option><option>YouTube long form</option><option>Shorts / reels</option><option>Documentary / film</option><option>Podcast editing</option><option>AI UGC / ads</option><option>Other</option></select></div>
+            <div class="mt-4"><label for="details" class="mb-2 block text-xs text-gray-400">Project details</label><textarea id="details" name="details" rows="5" required placeholder="Runtime, footage volume, deadline, and creative direction..." class="contact-input w-full resize-none rounded-xl border border-white/[0.07] bg-white/[0.025] px-4 py-3 text-sm text-white placeholder-gray-600 transition"></textarea></div>
+            <div id="form-status" class="mt-4 hidden rounded-xl px-4 py-3 text-xs" role="status" aria-live="polite"></div>
+            <button id="submit-button" type="submit" class="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-purple-600 py-3.5 text-sm font-semibold text-white shadow-lg shadow-purple-950/30 transition hover:bg-purple-500 disabled:cursor-not-allowed disabled:opacity-60"><i class="fas fa-paper-plane"></i><span>Send project details</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/[0.04] bg-[#030305] py-12">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 text-center md:flex-row md:text-left">
+      <div><div class="text-sm font-extrabold tracking-[.08em] text-white">SIAM TARAFDER</div><p class="mt-2 text-xs text-gray-600">High-retention video editing for creators and brands.</p></div>
+      <div class="flex gap-5 text-sm text-gray-500"><a href="#portfolio" class="hover:text-white">Work</a><a href="#pricing" class="hover:text-white">Pricing</a><a href="#contact" class="hover:text-white">Contact</a></div>
+      <p class="text-[10px] text-gray-700">© 2026 Siam Tarafder. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.toggle('hidden');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+      menuButton.innerHTML = isOpen ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-bars"></i>';
+    });
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    });
+    document.querySelectorAll('.tab-btn').forEach((button) => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach((tab) => {
+          tab.classList.remove('border-purple-500', 'text-white');
+          tab.classList.add('border-transparent', 'text-gray-400');
+        });
+        button.classList.add('border-purple-500', 'text-white');
+        button.classList.remove('border-transparent', 'text-gray-400');
+        const filter = button.dataset.filter;
+        document.querySelectorAll('.portfolio-item').forEach((item) => {
+          const visible = filter === 'all' || item.classList.contains(filter);
+          item.hidden = !visible;
+          if (visible) item.style.animation = 'none';
+          requestAnimationFrame(() => { if (visible) item.style.animation = ''; });
+        });
+      });
+    });
+    document.querySelectorAll('.faq-trigger').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.faq-item');
+        const wasOpen = item.classList.contains('faq-active');
+        document.querySelectorAll('.faq-item').forEach((faq) => {
+          faq.classList.remove('faq-active');
+          faq.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+        });
+        if (!wasOpen) {
+          item.classList.add('faq-active');
+          trigger.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
+    const form = document.getElementById('contact-form');
+    const submitButton = document.getElementById('submit-button');
+    const formStatus = document.getElementById('form-status');
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      formStatus.className = 'mt-4 hidden rounded-xl px-4 py-3 text-xs';
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        formStatus.textContent = 'Please complete each required field before sending.';
+        formStatus.className = 'mt-4 rounded-xl border border-amber-500/20 bg-amber-500/10 px-4 py-3 text-xs text-amber-200';
+        return;
+      }
+      submitButton.disabled = true;
+      submitButton.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i><span>Sending details</span>';
+      try {
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        });
+        if (!response.ok) throw new Error('Submission failed');
+        form.reset();
+        formStatus.textContent = 'Thanks — your project details are in. Expect a reply within 24 hours.';
+        formStatus.className = 'mt-4 rounded-xl border border-emerald-500/20 bg-emerald-500/10 px-4 py-3 text-xs text-emerald-200';
+      } catch (error) {
+        formStatus.textContent = 'The message could not be sent. Please email siamtarafder818@gmail.com directly.';
+        formStatus.className = 'mt-4 rounded-xl border border-rose-500/20 bg-rose-500/10 px-4 py-3 text-xs text-rose-200';
+      } finally {
+        submitButton.disabled = false;
+        submitButton.innerHTML = '<i class="fas fa-paper-plane"></i><span>Send project details</span>';
+      }
+    });
+  </script>
+</body>
+</html>
